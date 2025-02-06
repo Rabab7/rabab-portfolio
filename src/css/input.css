@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+   .button{
+    @apply inline-flex justify-center items-center text-xl w-10 h-10 bg-transparent  border-2 border-mainColor border-solid  rounded-full text-mainColor hover:bg-mainColor hover:text-sndBgColor hover:shadow-custom-shadow transition-shadow duration-300
+   }
+}
+

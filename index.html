@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="./dist/css/all.min.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <title>Rabab Portfolio</title>
+</head>
+
+<body class="bg-slate-50 dark:bg-bgColor overflow-x-hidden">
+
+    <div class="scroll-to-top  fixed right-8  bottom-5  bg-none z-10">
+        <div class="scroll-icon flex justify-center items-center w-14  rounded-lg bg-mainColor ">
+            <i class="fa-solid fa-angles-up fa-3x  p-1 text-blue-800 shadow-custom-shadow hover:shadow-none"></i>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav id="navbar" class=" nav p-4 left-0 right-0 top-0 z-50 shadow-lg shadow-bgColor w-full ">
+        <div class="max-w-screen-xl mx-auto">
+            <div class="container mx-auto px-11 flex md:justify-between items-center overflow-x-hidden ">
+                <h1 class="flex text-2xl font-black text-black dark:text-white items-center gap-2 cursor-pointer">
+                    Portfolio.
+                </h1>
+
+                <ul class=" hidden lg:flex gap-8">
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-full before:transition-[width] before:duration-300">
+                        <a href="#home"
+                            class="font-extrabold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor">Home</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-full before:transition-[width] before:duration-300">
+                        <a href="#skills"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor ">Skills</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-full before:transition-[width] before:duration-300">
+                        <a href="#services"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor ">Services</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-full before:transition-[width] before:duration-300">
+                        <a href="#projects"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor">Projects</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-full before:transition-[width] before:duration-300">
+                        <a href="#contact"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor">Contact</a>
+                    </li>
+                </ul>
+
+
+                <!-- <input type="checkbox" class="toggle-success ml-auto md:ms-16" /> -->
+                <i
+                   id="moon" class=" fa-solid fa-moon text-gray-700  dark:text-white  ml-auto md:ms-16 fa-2xl  cursor-pointer"></i>
+
+                <button class="lg:hidden ms-4 border-2 border-bgColor dark:border-mainColor px-2 py-1">
+                    <i class="fa-solid fa-bars text-black dark:text-gray-200 fa-xl"></i>
+                </button>
+
+                <!-- dropdown menun -->
+
+                <ul id="dropdownmenun"
+                    class="flex flex-col z-10 gap-8 absolute left-0 top-20 right-0 bg-gray-200 dark:bg-sndBgColor p-5 ">
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-20 before:transition-[width] before:duration-300">
+                        <a href="#home"
+                            class="font-extrabold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor">Home</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-20 before:transition-[width] before:duration-300">
+                        <a href="#skills"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor ">Skills</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-20 before:transition-[width] before:duration-300">
+                        <a href="#services"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor ">Services</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-20 before:transition-[width] before:duration-300">
+                        <a href="#projects"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor">Projects</a>
+                    </li>
+                    <li
+                        class=" relative before:w-0 before:h-[2px] before:bg-mainColor before:absolute before:left-0 before:-bottom-2 hover:before:w-20 before:transition-[width] before:duration-300">
+                        <a href="#contact"
+                            class="font-semibold text-black dark:text-gray-100 hover:text-mainColor dark:hover:text-mainColor">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- home section -->
+    <section id="home" class="home  min-h-screen  flex justify-center items-center w-full overflow-x-hidden">
+        <div class="max-w-screen-xl mx-auto  ">
+            <div class="container  p-16 lg:p-20 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="col-span-12 mx-auto lg:col-span-5 order-1 lg:order-2 lg:ml-20  delay-[100ms] duration-[500ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400">
+                    <div class="home-img ">
+                        <img src="./src/Images/home.png" class="w-full max-w-xs mx-auto animate-floatImage " alt="portfolio img">
+                    </div>
+
+                </div>
+
+                <div class="home-content p-3  col-span-12 lg:col-span-7 order-2 lg:order-1 delay-[100ms] duration-[500ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400">
+                    <h3 class="text-xl font-bold text-bgColor dark:text-white">Hi , it's me</h3>
+                    <h1 class="text-4xl font-bold my-4 text-bgColor dark:text-white">Rabab Refaat</h1>
+                    <h3 class="text-3xl font-bold text-bgColor dark:text-white ">And I’m a <span
+                            class=" block sm:inline after:animate-type text-mainColor font-extrabold "></span></h3>
+                    <p class="my-4 fs-4 text-bgColor dark:text-white ">I'm an energetic front-end developer skilled at
+                        writing well-designed, efficient code using Angular17 and TailwindCSS or Bootstrap .
+                        I specialize in creating responsive websites with a mobile-first approach, ensuring seamless,
+                        engaging experiences across all devices. With a strong focus on modern design and user-centered
+                        functionality, I bring ideas to life through clean,
+                        maintainable code.</p>
+                    <div class="social-media mt-6 mb-12 flex gap-3 ">
+                        <a href="https://www.facebook.com/ " target="_blank" class="button"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="mailto:rababrefaatali@gmail.com" target="_blank" class=" button">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/201210311868" target="_blank" class=" button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://bit.ly/4gpA3nU" class="button" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1J0nQDqE4Fc05FfusnS2nqSzRL-NTHme5/view?usp=sharing"
+                        class="py-2 px-6 w-full  tracking-widest whitespace-nowrap text-xl font-semibold bg-mainColor rounded-full shadow-custom-shadow border-none text-bgColor hover:shadow-none transition-shadow duration-300" target="_blank">Download
+                        CV</a>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- skills section -->
+    <section id="skills" class="skills bg-gray-200  dark:bg-sndBgColor min-h-screen  flex justify-center items-center w-full">
+        <div class="max-w-screen-xl mx-auto  ">
+            <div class="container mx-auto py-32 ">
+                <h2 class="text-center text-mainColor text-5xl font-bold capitalize">skills</h2>
+                <div class="grid  grid-cols-1 lg:grid-cols-2 gap-11 mt-16 px-4">
+
+                    <div class="html   md:px-0 delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-orange-500 text-2xl flex items-center gap-3">Html <span><i
+                                    class="fa-brands fa-html5 fa-2x text-orange-500"></i></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-orange-500 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="css  delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-mainColor text-2xl flex items-center gap-3">Css <span><i
+                                    class="fa-brands fa-css3-alt fa-2x text-mainColor"></i></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-mainColor w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="bootstrap  delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-green-500 text-2xl flex items-center gap-3">Bootstrap <span><i
+                                    class="fa-brands fa-bootstrap fa-2x text-green-500"></i></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-green-500 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="js  delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-yellow-500 text-2xl font-semibold flex items-center gap-3">JavaScript <span><i
+                                    class="fa-brands fa-js fa-2x text-yellow-500"></i></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-yellow-500 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="tailwind  delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-blue-500 text-2xl font-semibold flex items-center gap-3">TailwindCss <span><img
+                                    src="./src/Images/tailwindcss.jpeg" class="w-12 rounded-sm bg-blue-500"
+                                    alt=""></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-blue-500 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="jquary  delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-blue-900 text-2xl font-semibold flex items-center gap-3">JQuary <span><img
+                                    src="./src/Images/jquary.jpeg" class="w-12 rounded-full" alt="jquary img"></span>
+                        </h3>
+                        <div class="mt-2 h-2 rounded-full bg-blue-900 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="ts  mt-4 delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-blue-600 text-2xl font-semibold flex items-center gap-3">TypeScript<span><img
+                                    src="./src/Images/ts.png" class="w-12 rounded-full" alt="jquary img"></span>
+                        </h3>
+                        <div class="mt-2 h-2 rounded-full bg-blue-500 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="angular  delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-pink-600 text-2xl font-semibold flex items-center gap-3">Angular17 <span><i
+                                    class="fa-brands fa-angular fa-2x text-pink-600"></i></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-pink-600 w-72 lg:w-96"></div>
+                    </div>
+
+                    <div class="sass   mt-4 delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                        data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-pink-600 text-2xl font-semibold flex items-center gap-3">Sass <span><i
+                                    class="fa-brands fa-sass text-rose-700"></i></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-pink-600 w-72 lg:w-96"></div>
+                    </div>
+
+
+                    <div class="c#   delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                        data-taos-offset="400" data-taos-once="false">
+                        <h3 class="text-purple-700 text-2xl font-semibold flex items-center gap-3">C# <span><img
+                                    src="./src/Images/csharp.jpeg" class="w-12 rounded-full" alt="c# img"></span></h3>
+                        <div class="mt-2 h-2 rounded-full bg-purple-700  w-72 lg:w-96" ></div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- services section -->
+    <section id="services" class=" overflow-x-hidden">
+        <div class="max-w-screen-xl mx-auto  ">
+            <div class="container mx-auto  py-16 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8 ">
+                <h2 class="capitalize text-center text-mainColor text-5xl font-bold  ">Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 p-10">
+
+
+                    <div class="bg-gray-100 dark:bg-sndBgColor border-2 border-mainColor dark:border-sndBgColor  py-3 px-8  rounded-lg   hover:shadow-custom-shadow transition-shadow delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="text-4xl mb-4 mx-auto">
+                            🖥️
+                        </div>
+                        <h3 class="text-lg text-bgColor dark:text-white sm:text-xl md:text-2xl font-semibold mb-3 ">
+                            Custom Front-End Development</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-bgColor dark:text-white  capitalize">Build
+                            high-quality, performant, and interactive user interfaces using Angular 17 & JS and Tailwind
+                            CSS. Tailored solutions to match your business needs and deliver a seamless user experience.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-sndBgColor border-2 border-mainColor dark:border-sndBgColor  py-3 px-8  rounded-lg   hover:shadow-custom-shadow transition-shadow  delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="400">
+                        <div class="text-4xl mb-4">
+                            📱
+                        </div>
+                        <h3 class="text-lg text-bgColor dark:text-white sm:text-xl md:text-2xl font-semibold mb-3">
+                            Responsive Web Design</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-bgColor dark:text-white  capitalize">Create
+                            websites that look and function perfectly on all devices. Using Tailwind CSS and Bootstrap,
+                            I ensure a mobile-first approach for a consistent experience across screens.</p>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-sndBgColor border-2 border-mainColor dark:border-sndBgColor  py-3 px-8  rounded-lg   hover:shadow-custom-shadow transition-shadow delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="text-4xl mb-4">🛠️</div>
+                        <h3 class="text-lg text-bgColor dark:text-white sm:text-xl md:text-2xl font-semibold mb-3">
+                            Angular Component Library Development</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-bgColor dark:text-white capitalize">Develop
+                            reusable, modular Angular components with Sass , TailwindCSS or Bootstrap for styling. Speed
+                            up development with a custom component library tailored to your project.</p>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-sndBgColor border-2 border-mainColor dark:border-sndBgColor py-3 px-8  rounded-lg   hover:shadow-custom-shadow transition-shadow delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="text-4xl mb-4">🔗</div>
+                        <h3 class="text-lg text-bgColor dark:text-white sm:text-xl md:text-2xl font-semibold mb-3">API
+                            Integration and Dynamic Apps</h3>
+                        <p class="text-sm sm:text-base md:text-lg text-bgColor dark:text-white capitalize">Integrate
+                            your front-end applications with APIs for dynamic and real-time content. I handle API
+                            integration with Angular to deliver robust, data-driven apps.</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- projects section -->
+    <section id="projects" class="min-h-screen  bg-gray-200  dark:bg-sndBgColor overflow-x-hidden">
+        <div class="max-w-screen-xl mx-auto  ">
+            <div class="container mx-auto  py-16 sm:py-20 lg:py-28 px-4 sm:px-5 lg:px-8">
+                <h2 class="capitalize text-5xl font-bold text-center  text-mainColor">Projects</h2>
+                <div class="grid grid-cols-2 md:grid-cols-6  lg:grid-cols-6  p-5 gap-4 mb-8 justify-center items-center pt-9">
+                    <button data-filter="all"
+                        class="px-4 active py-2 whitespace-nowrap  font-semibold text-lg bg-gray-200 dark:bg-sndBgColor text-black dark:text-white hover:shadow-lg hover:shadow-mainColor border-2 border-mainColor rounded">All</button>
+                    <button data-filter="html&css"
+                        class="px-4 py-2 whitespace-nowrap font-semibold text-lg bg-gray-200 dark:bg-sndBgColor text-black dark:text-white hover:shadow-lg hover:shadow-mainColor border-2 border-mainColor rounded">Html&CSS</button>
+                    <button data-filter="bootstrap"
+                        class="px-4  py-2 whitespace-nowrap font-semibold text-lg bg-gray-200 dark:bg-sndBgColor text-black dark:text-white hover:shadow-lg hover:shadow-mainColor border-2 border-mainColor rounded">Bootstrap</button>
+                    <button data-filter="js"
+                        class="px-4 py-2 whitespace-nowrap font-semibold text-lg bg-gray-200 dark:bg-sndBgColor text-black dark:text-white hover:shadow-lg hover:shadow-mainColor border-2 border-mainColor rounded">JavaScript</button>
+                    <button data-filter="tailwind"
+                        class="px-4  py-2 whitespace-nowrap font-semibold text-lg bg-gray-200 dark:bg-sndBgColor text-black dark:text-white hover:shadow-lg hover:shadow-mainColor border-2 border-mainColor rounded">Tailwind</button>
+                    <button data-filter="angular"
+                        class="px-4  py-2 whitespace-nowrap font-semibold text-lg bg-gray-200 dark:bg-sndBgColor text-black dark:text-white hover:shadow-lg hover:shadow-mainColor border-2 border-mainColor rounded">Angular</button>
+                </div>
+
+                <div id="projectCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-10">
+                    <div data-name="js"
+                        class="group  bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300 
+                        delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="relative">
+                            <img src="./src/Images/yummy.jpeg" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+                            
+                        </div>
+
+                        <div class="flex justify-between gap-5">
+                            <a href="https://github.com/Rabab7/yummy.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                yummy app</a>
+                            <a href="https://rabab7.github.io/yummy/" target="_blank" rel="noopener noreferrer"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="angular"
+                        class="group
+                         bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                         delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="400">
+                        <div class="relative">
+                            <img src="./src/Images/ecommerce.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+                            <a href="https://github.com/Rabab7/ecommerce-repo.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                ecommerce </a>
+                            <a href="https://ecommerce-repo-egqt.vercel.app/login" target="_blank"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="tailwind"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="relative">
+                            <img src="./src/Images/medilab.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+
+                            <a href="https://github.com/Rabab7/medilab.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                medilab app </a>
+                            <a href=" https://rabab7.github.io/medilab/" target="_blank"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="html&css"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="relative">
+                            <img src="./src/Images/ruby restaurent.png" alt="ruby restaurent"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+
+                            <a href="https://github.com/Rabab7/yummy.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                               restaurent</a>
+                            <a href="https://rabab-refaat.github.io/restaurant/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="html&css"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="400">
+                        <div class="relative">
+                            <img src="./src/Images/mealify-app.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+                            <a href="https://github.com/Rabab7/mealify-app.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                mealify app</a>
+                            <a href="https://rabab7.github.io/mealify-app/" target="_blank" rel="noopener noreferrer"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+
+                    <div data-name="bootstrap"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="relative">
+                            <img src="./src/Images/geek-app.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+                            <a href="https://github.com/Rabab7/geek-app.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                geek app</a>
+                            <a href="https://rabab7.github.io/geek-app/" target="_blank" rel="noopener noreferrer"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="bootstrap"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-x-[100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="relative">
+                            <img src="./src/Images/cafe-app.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+
+                            <a href="https://github.com/Rabab7/cafe-app.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                cafe app</a>
+                            <a href="https://rabab7.github.io/cafe-app/" target="_blank"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="js"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="400">
+                        <div class="relative">
+                            <img src="./src/Images/login-system.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+                            <a href="https://github.com/Rabab7/login-system.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                login system </a>
+                            <a href="https://rabab7.github.io/login-system/" target="_blank" rel="noopener noreferrer"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="js"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                    data-taos-offset="400" data-taos-once="false">
+                        <div class="relative">
+                            <img src="./src/Images/game.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+
+                            <a href="https://github.com/Rabab7/game-app.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                game app </a>
+                            <a href="https://rabab7.github.io/game-app/" target="_blank"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+                    <div data-name="tailwind"
+                    class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                    delay-[300ms] duration-[600ms] taos:translate-x-[-100%] taos:opacity-0"
+                data-taos-offset="400" data-taos-once="false">
+                    <div class="relative">
+                        <img src="./src/Images/weathercast.png" alt="Iphone Store"
+                            class="w-full object-cover rounded-md mb-4">
+
+                    </div>
+                    <div class="flex justify-between gap-5">
+                        <a href="https://github.com/Rabab7/weathercast.git" target="_blank"
+                            class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                            <span><i class="fa-solid fa-link"></i></span>
+                            weather app</a>
+                        <a href="https://rabab7.github.io/weathercast/" target="_blank" rel="noopener noreferrer"
+                            class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                            <span><i class="fa-brands fa-github"></i></span>
+                             Demo</a>
+                    </div>
+
+                    </div>
+
+                    <div data-name="tailwind"
+                        class="group bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-md  hover:shadow-custom-shadow transition-shadow duration-300
+                        delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="400">
+                        <div class="relative">
+                            <img src="./src/Images/portfolio.png" alt="Iphone Store"
+                                class="w-full object-cover rounded-md mb-4">
+
+                        </div>
+                        <div class="flex justify-between gap-5">
+
+                            <a href="https://github.com/Rabab7/portfolio.git" target="_blank"
+                                class="text-md font-semibold mb-3 whitespace-nowrap text-bgColor dark:text-white uppercase hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-solid fa-link"></i></span>
+                                portfolio  </a>
+                            <a href="https://rabab7.github.io/portfolio/" target="_blank"
+                                class="text-bgColor dark:text-white whitespace-nowrap hover:scale-110 duration-300 hover:underline">
+                                <span><i class="fa-brands fa-github"></i></span>
+                                 Demo</a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- contact section -->
+    <section id="contact" class=" min-h-screen   ">
+        <div class="max-w-screen-xl mx-auto  ">
+            <div class="container mx-auto px-6  py-28  ">
+
+                <h2 class="text-center text-mainColor text-5xl font-bold capitalize">Contact</h2>
+
+                <div class="w-10/12 lg:w-1/2 mx-auto bg-slate-50 dark:bg-gray-800 p-10 mt-9 rounded-lg shadow-2xl ">
+
+                    <form class="space-y-6 ">
+                        <div class="">
+                            <label for="name"
+                                class="block w-full text-lg font-medium text-gray-900 dark:text-white mb-2">Name</label>
+                            <input [class]="
+                              isValid ? 'border-green-500 focus:ring-green-500' : 'border-red-500 focus:ring-red-500'
+                              " type="text" id="name" name="name"
+                                class="w-full p-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-400"
+                                placeholder="Your name" value="">
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="block w-full text-lg font-medium text-gray-900 dark:text-white mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full p-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-400"
+                                placeholder="example@email.com" value="">
+                        </div>
+                        <div>
+                            <label for="message"
+                                class="block w-full text-lg font-medium text-gray-900 dark:text-white mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full p-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring focus:ring-indigo-200 focus:border-indigo-400"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full whitespace-nowrap py-2 px-6 tracking-widest text-lg font-semibold bg-mainColor rounded-full shadow-custom-shadow border-none text-bgColor hover:shadow-none transition-shadow duration-300">Send
+                            Message</button>
+                    </form>
+                </div>
+
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="w-full bg-gray-200  dark:bg-sndBgColor py-6">
+        <div class="max-w-screen-xl mx-auto  ">
+            <div class="container mx-auto   ">
+                <div class="flex flex-col items-center">
+                    <p class="text-lg mb-4 text-sndBgColor dark:text-gray-200">© 2025
+                        <span class="logo text-mainColor font-semibold  cursor-pointer px-2">Rabab Refaat</span>All rights
+                        reserved.
+                    </p>
+        
+        
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <script src="./src/js/index.js"></script>
+
+
+
+</body>
+
+</html>
