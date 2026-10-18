@@ -27,18 +27,16 @@ module.exports = {
 
       keyframes: {
         type: {
-          '0%': { content: "'F'" },
-          '10%': { content: "'Fr'" },
-          '20%': { content: "'Fro'" },
-          '30%': { content: "'Fron'" },
-          '40%': { content: "'Front'" },
-          '50%': { content: "'Frontend'" },
-          '60%': { content: "'Frontend D'" },
-          '70%': { content: "'Frontend Dev'" },
-          '80%': { content: "'Frontend  Developer'" },
-          // '90%': { content: "'Frontend Angular '" },
-          // '100%': { content: "'Frontend Angular '" },
+          '0%': { content: "'A'" },
+          '10%': { content: "'Ang'" },
+          '20%': { content: "'Angul'" },
+          '30%': { content: "'Angular '" },
+          '40%': { content: "'Angular Front'" },
+          '55%': { content: "'Angular Frontend '" },
+          '70%': { content: "'Angular Frontend Dev'" },
+          '85%, 100%': { content: "'Angular Frontend Developer'" },
         },
+        
 
         floatImage: {
           '0%': { transform: "translateY(0)" },
@@ -46,9 +44,6 @@ module.exports = {
           '100%': { transform: "translateY(0)" }
       }
       },
-
-
-    },
   },
   plugins: [
     require('daisyui' , 'taos/plugin' ),
@@ -59,4 +54,4 @@ module.exports = {
     'html.js :where([class*="taos:"]:not(.taos-init))'
   ]
 }
-
+}
